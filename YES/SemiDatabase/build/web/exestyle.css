@@ -1,0 +1,128 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 8, 2024, 1:22:28 PM
+    Author     : marxa
+*/
+body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+        .landscape-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .landscape-header, h2 {
+            color: white;
+        }
+        .landscape-header h2 {
+            margin: 0 20px;
+        }
+        .filter-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .filter-options {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+            width: 80%;
+            margin-top: 20px;
+        }
+        .filter-option {
+            position: relative;
+            height: 350px;
+            border-radius: 10px;
+            text-align: left;
+            cursor: pointer;
+            font-size: 20px;
+            padding: 10px;
+            line-height: 1.5;
+            color: red; /* Text color to be readable over images */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .filter-option.blue-border {
+            border: 2px solid blue;
+        }
+        .filter-option.pink-border {
+            border: 2px solid pink;
+        }
+        .filter-option::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            z-index: -1;
+        }
+        .filter-option#filter1::before {
+            background-image: url('/SemiDatabase/img/exe1.jpeg');
+        }
+        .filter-option#filter2::before {
+            background-image: url('/SemiDatabase/img/exe2.jpeg');
+        }
+        .filter-option#filter3::before {
+            background-image: url('/SemiDatabase/img/exe3.jpeg');
+        }
+        .filter-option#filter4::before {
+            background-image: url('/SemiDatabase/img/exe4.jpeg');
+        }
+        .filter-option#filter5::before {
+            background-image: url('/SemiDatabase/img/exe5.jpeg');
+        }
+        .filter-option#filter6::before {
+            background-image: url('/SemiDatabase/img/exe6.jpeg');
+        }
+        .filter-option#filter7::before {
+            background-image: url('/SemiDatabase/img/exe7.jpeg');
+        }
+        .filter-option#filter8::before {
+            background-image: url('/SemiDatabase/img/exe8.jpeg');
+        }
+        .filter-option#filter9::before {
+            background-image: url('/SemiDatabase/img/exe9.jpeg');
+        }
+        .filter-option#filter10::before {
+            background-image: url('/SemiDatabase/img/exe10.jpeg');
+        }
+        .filter-option#filter11::before {
+            background-image: url('/SemiDatabase/img/exe11.jpeg');
+        }
+        .filter-option#filter12::before {
+            background-image: url('/SemiDatabase/img/exe12.jpeg');
+        }
+        .generate-button {
+            margin-top: 20px;
+        }
+        .generate-button button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .generate-button button:hover {
+            background-color: darkred;
+        }
+
+.generate-button {
+
+}

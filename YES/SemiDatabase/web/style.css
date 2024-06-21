@@ -1,0 +1,431 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 31, 2024, 11:30:42 AM
+    Author     : marxa
+*/
+   /* General styles */
+body {
+    font-family: montserrat, arial, verdana;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.header-area {
+    background-color: black;
+}
+
+.main-header-area {
+    position: relative;
+    padding: 10px 0;
+}
+
+.header_bottom_border {
+    border-bottom: 1px solid #333;
+}
+
+.header_bottom_border .row {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    width: 200px;
+}
+.settings {
+    position: static;
+    top: 23px;
+    margin-left: 350px;
+    z-index: 999; 
+  }
+
+.main-menu {
+    flex-grow: 1;
+    width: 100px;
+    margin-left: 600px;
+}
+
+.main-menu nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.main-menu ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+.main-menu ul li a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.main-menu ul li a:hover {
+    background: #333;
+    border-radius: 5px;
+}
+
+.main-menu ul li .submenu {
+    display: none;
+    position: absolute;
+    background: black;
+    top: 40px;
+    left: 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.main-menu ul li .submenu li {
+    margin-right: 0;
+}
+
+.main-menu ul li:hover .submenu {
+    display: block;
+}
+
+/* Mobile menu styles */
+.mobile_menu {
+    display: none;
+}
+
+.dropdown-toggle::after {
+    content: '\25BE';
+    margin-left: 5px;
+}
+.slider_area {
+    position: relative;
+}
+
+.single_slider {
+    height: 800px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Overlay background color */
+}
+
+.slider_text {
+    color: #fff;
+    z-index: 1;
+}
+
+
+.slider_bg_1 {
+    background-image: url('/SemiDatabase/img/banner.png'); /* Default background image */
+}
+.slider_bg_2 {
+    background-image: url('/SemiDatabase/img/2.png'); /* Default background image */
+}
+
+.slider_text {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Apply styles to the text elements */
+.slider_text span {
+    font-family: Trebuchet MS ;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: grey;
+}
+
+.slider_text h3 {
+    font-family: Bahnschrift SemiBold;
+    text-transform: uppercase;
+    font-size: 100px;
+    color: white;
+}
+
+.slider_text p {
+    font-family: Bahnschrift SemiBold SemiConden;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: red;
+}
+.section_title {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    right: 0;
+    margin-left: 200px;
+    margin-bottom: 150px;
+}
+p {
+    text-align: center; /* Change font size */
+    font-size: 20px;
+    color: white;
+}
+h3 {
+    font-family: Bahnschrift SemiBold;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: White;
+}
+.features_area .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    background-color: black;
+    height: 700px;
+}
+
+.features_area .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center features horizontally */
+}
+
+.single_feature {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    text-align: center; /* Center text within each feature */
+}
+
+.single_feature:last-child {
+    margin-right: 0;
+}
+
+.features_area .container {
+    display: flex;
+    justify-content: center; /* Horizontal alignment */
+    align-items: flex-start; /* Vertical alignment */
+}
+
+.features_area .row {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure the features don't wrap to the next line */
+    justify-content: flex-start; /* Adjust spacing between features */
+    gap: 20px;
+}
+
+.single_feature {
+    flex: 0 0 auto; /* Ensure each feature does not grow or shrink */
+    margin-right: 10px; /* Adjust horizontal spacing between features */
+}
+
+.single_feature:last-child {
+    margin-right: 0; /* Remove margin from the last feature */
+}
+
+@media (max-width: 992px) {
+    .single_feature {
+        flex-basis: calc(33.33% - 10px); /* Adjust width of each feature for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .single_feature {
+        flex-basis: calc(50% - 10px); /* Adjust width of each feature for small screens */
+    }
+}
+.footer {
+    background-color: #000; /* Set background color to black */
+    color: #fff; /* Set text color to white */
+    padding: 80px 0;
+}
+.footer-section {
+    position: fixed;
+    left: 0;
+    top: 50%; /* Adjust this value to move the section up or down */
+    transform: translateY(-50%);
+    width: 250px; /* Adjust the width as necessary */
+    text-align: left;
+    padding: 10px;
+    background-color: #f8f9fa; /* Optional: Add a background color */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Optional: Add a shadow for better visibility */
+}
+
+.footer_logo img {
+    margin-bottom: 10px;
+    margin-right: 70%;
+    position: fixed;
+    left: 0;
+}
+
+.footer_info p, .footer_info a {
+    margin: 0;
+    padding: 0;
+    color: #333; /* Adjust text color if needed */
+}
+
+/* CALORIE */
+
+.calculator {
+    background-color: black;
+    color: red;
+    padding: 20px;
+
+}
+.calculator h1 {
+    text-align: center;
+    justify-content: center;
+}
+
+.calculator-title {
+    color: red;
+}
+
+.calculator-hr {
+    border-color: red;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: red;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: black;
+    color: red;
+}
+
+.submit {
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: red;
+}
+
+.result {
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.result-text h1 {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.result p {
+    color: red;
+    font-size: 16px;
+    line-height: 1.5;
+}
+ /*Macro*/
+ .container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.bmi-calculator {
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-text h1,
+.calculator-title {
+    text-align: center;
+}
+
+.calculator-hr {
+    border-top: 1px solid #ddd;
+}
+
+.field {
+    margin-bottom: 20px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.field input[type="text"],
+.field select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.submit input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit input[type="submit"]:hover {
+    background-color: red;
+}
+

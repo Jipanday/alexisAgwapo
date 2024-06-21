@@ -1,0 +1,72 @@
+.completed { text-decoration: line-through; color: grey; }
+        .exercise { display: none; }
+        .active { display: block; }
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            color: white;
+        }
+        label, p {
+            color: white;
+        }
+        form {
+            margin: 20px auto;
+        }
+        input[type="number"], button {
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid red;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: red;
+            color: black;
+        }
+        .completed-mark {
+            color: green;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .slideshow-container {
+            max-width: 800px;
+            margin: 20px auto;
+            border: 2px solid red;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #333;
+        }
+        .exercise {
+            margin-bottom: 20px;
+        }
+        button[type="button"] {
+            margin: 5px;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: grey;
+        }
+        hr {
+            border: 1px solid red;
+        }
+        .return-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+            background-image: url('/SemiDatabase/arrow.png'); /* replace with the path to your image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+        }
